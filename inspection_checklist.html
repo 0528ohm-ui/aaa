@@ -41,20 +41,13 @@
     /* ══════════════════════════════════════
        flatpickr 달력
     ══════════════════════════════════════ */
-    .flatpickr-calendar.inline {
-      width: calc(100% / 2.5) !important;
-      transform: scale(2.5);
-      transform-origin: top left;
-      margin: 1em 0 35em 0;
-      z-index: 1000;
-    }
-    @media (max-width: 600px) {
-      .flatpickr-calendar.inline {
-        width: calc(100% / 1.6) !important;
-        transform: scale(1.6);
-        margin: 1em 0 20em 0;
-      }
-    }
+.flatpickr-calendar.inline {
+  width: 100% !important;
+  transform: none;
+  transform-origin: top left;
+  margin: 0.5em 0 1em 0;
+  z-index: 1000;
+}
     .flatpickr-calendar.inline .flatpickr-day.has-marker { position: relative; }
     .flatpickr-calendar.inline .flatpickr-day.has-marker::after {
       content: "";
